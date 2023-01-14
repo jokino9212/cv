@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+}
+html {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 12px;
+}
+
+.description {
+    color: #00000099;
+}
+
+.text {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.outer {
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.inner {
+    margin: 0 auto;
+    max-width: 1870px;
+
+
+}
+
+.header {
+    margin-bottom: 60px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.header__inner {
+    display: flex;
+    padding: 20px;
+}
+.header__logo-box {
+    margin-right: auto;
+}
+
+.header__logo-text {
+    font-weight: 700;
+    font-size: 1.42rem;
+    letter-spacing: 0.5rem;
+}
+
+.header__language-box {
+    display: flex;
+    margin-right: 20px;
+}
+
+.header__language-item {
+    font-size: 1.085rem;
+}
+
+.header__language--ru {
+    margin-right: 5px;
+}
+
+.header__brand-box {
+    margin-right: 20px;
+}
+
+.header__brand-link {
+    font-size: 1.085rem;
+}
+
+.content__inner {
+    max-width: 1200px;
+}
+
+
+.content__top-container {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.content__title-box {
+
+}
+
+.content__title {
+    font-size: 4.3rem;
+}
+
+.content__title-strong {
+    font-weight: 600;
+    text-decoration: underline;
+    font-style: oblique;
+}
+
+.content__social-list {
+    display: flex;
+}
+
+.content__social-icon {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content__social-icon:hover {
+    fill: #ffffff
+}
+
+.content__social-icon:hover rect{
+    fill: #000000
+}
+
+.content__bottom-container {
+    margin-bottom: 90px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.content__left {
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+}
+
+.content__avatar-box {
+    margin-bottom: 25px;
+}
+
+.content__avatar-img {
+    width: 215px;
+    height: 215px;
+}
+
+.content__name {
+    margin-bottom: 50px;
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+
+.content__name-description {
+    margin-bottom: 50px;
+    font-size: 1.18rem;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.content__description-strong {
+    font-weight: 600;
+    color: #000000;
+}
+
+.content__personality-box {
+    margin-bottom: 40px;
+}
+
+.content__personality-item--first {
+    border-top: 2px solid #000000;
+}
+
+.content__personality-item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000000;
+}
+
+.content__button-message{
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.content__heading-box {
+    margin-bottom: 20px;
+}
+
+.content__middle-heading {
+    text-align: end;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 33px;
+}
+
+.content__middle-line {
+    height: 8px;
+    border-top: 2px solid black;
+    border-bottom: 4px solid black;
+}
+
+.content__middle-personality-item {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__text {
+    font-weight: 700;
+}
+
+.content_personality-item-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__personality-text {
+    text-align: end;
+}
+
+.content__middle-personality-description {
+    margin-bottom: 20px;
+}
+
+.content__bottom-box {
+    display: flex;
+}
+
+.content__bottom-left {
+    margin-right: 40px;
+    flex-basis: 50%;
+}
+
+.content__bottom-right {
+    flex-basis: 50%;
+}
+
+.content__tag-box {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.content__tag {
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    padding: 2px 10px;
+    font-weight: 700;
+
+}
+
+.footer {
+    border-top: 1px solid #CCCCCC;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
