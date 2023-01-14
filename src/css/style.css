@@ -137,6 +137,8 @@ html {
 .content__avatar-img {
     width: 215px;
     height: 215px;
+    border-radius: 50%;
+    object-fit: contain;
 }
 
 .content__name {
