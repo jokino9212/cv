@@ -101,11 +101,11 @@ html {
 }
 
 .header__burger-button:hover {
-    background-color: #000000;
+
 }
 
 .header__burger-button:hover .header__line {
-    background-color: #ffffff;
+
 }
 
 .header__burger-button:hover .header__line-bottom {
@@ -504,8 +504,17 @@ html {
     .header__burger-button {
         display: flex;
         z-index: 11;
+
+    }
+
+    .header__burger-button:focus .header__line {
         background-color: #ffffff;
     }
+
+    .header__burger-button:active .header__line {
+        background-color: #ffffff;
+    }
+
 
     .header__nav {
         margin-right: 0;
