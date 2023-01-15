@@ -101,13 +101,7 @@ html {
     cursor: pointer;
 }
 
-.header__burger-button:hover {
-
-}
-
-
-
-.header__burger-button:hover .header__line-bottom {
+.header__burger-button:hover .header__line--bottom {
     width: 100%;
 }
 
