@@ -509,7 +509,7 @@ html {
 
     .header__burger-button--is-active .header__line--top {
         transform: translateY(0px) rotate(-45deg);
-        height: 3px;
+        height: 2px;
     }
 
     .header__burger-button--is-active .header__line--bottom {
