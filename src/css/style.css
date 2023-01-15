@@ -507,13 +507,22 @@ html {
 
     }
 
-    .header__burger-button:focus .header__line {
-        background-color: #ffffff;
+    .header__burger-button--is-active {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+
     }
 
-    .header__burger-button:active .header__line {
-        background-color: #ffffff;
+    .header__burger-button--is-active .header__line {
+        background-color: #ffffff
     }
+
+    /*.header__burger-button:focus .header__line {*/
+    /*    background-color: #ffffff;*/
+    /*}*/
+
+
 
 
     .header__nav {
