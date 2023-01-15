@@ -200,6 +200,7 @@ html {
 
 .content__avatar-box {
     margin: 0 auto 25px auto;
+    overflow:hidden;
 }
 
 .content__avatar-img {
@@ -207,11 +208,11 @@ html {
     height: 215px;
     border-radius: 50%;
     object-fit: contain;
+    filter: grayscale(100%);
 }
 
 .content__avatar-img:hover {
     animation: object-fit 0.9s linear both;
-
 }
 
 
@@ -407,23 +408,13 @@ html {
 
 @keyframes object-fit {
     0% {
-        object-fit: contain;
-        transform: scale(1.1);
+        filter: grayscale(100%);
+        transform: scale(1);
     }
-    20% {
-        object-fit: cover;
-        transform: scale(1.15);
-    }
-    30% {
-        object-fit: cover;
-        transform: scale(1.1);
-    }
-    50% {
-        transform: scale(1.15);
-    }
+
     100% {
-        object-fit: cover;
-        transform: scale(1.2);
+        filter: grayscale(0);
+        transform: scale(1.1);
     }
 }
 
