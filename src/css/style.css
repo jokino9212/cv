@@ -3,9 +3,11 @@
 * {
     box-sizing: border-box;
 }
+
 a {
     color: inherit;
 }
+
 html {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 12px;
@@ -28,8 +30,6 @@ html {
 .inner {
     margin: 0 auto;
     max-width: 1870px;
-
-
 }
 
 .header {
@@ -41,6 +41,7 @@ html {
     display: flex;
     padding: 20px;
 }
+
 .header__logo-box {
     margin-right: auto;
 }
@@ -72,6 +73,10 @@ html {
     font-size: 1.085rem;
 }
 
+.header__brand-link:hover {
+    text-decoration: underline;
+}
+
 .content__inner {
     max-width: 1200px;
 }
@@ -96,7 +101,10 @@ html {
     font-weight: 600;
     text-decoration: underline;
     font-style: oblique;
+    animation: strong-appear 2s linear;
 }
+
+
 
 .content__social-list {
     display: flex;
@@ -107,13 +115,14 @@ html {
     height: 40px;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all 0.5s ease-in-out;
 }
 
 .content__social-icon:hover {
     fill: #ffffff
 }
 
-.content__social-icon:hover rect{
+.content__social-icon:hover rect {
     fill: #000000
 }
 
@@ -131,7 +140,7 @@ html {
 }
 
 .content__avatar-box {
-    margin-bottom: 25px;
+    margin: 0 auto 25px auto;
 }
 
 .content__avatar-img {
@@ -141,8 +150,14 @@ html {
     object-fit: contain;
 }
 
+.content__avatar-img:hover {
+    animation: object-fit 0.9s linear both;
+
+}
+
+
 .content__name {
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
     font-size: 1.45rem;
     font-weight: 600;
 }
@@ -157,6 +172,7 @@ html {
 .content__description-strong {
     font-weight: 600;
     color: #000000;
+    animation: strong-description-appear 2s linear;
 }
 
 .content__personality-box {
@@ -175,15 +191,23 @@ html {
     border-bottom: 2px solid #000000;
 }
 
-.content__button-message{
+.content__button-message {
     width: 100%;
     padding: 10px 20px 10px 20px;
     background-color: transparent;
     font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.content__button-message:hover {
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .content__heading-box {
     margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .content__middle-heading {
@@ -198,6 +222,7 @@ html {
     height: 8px;
     border-top: 2px solid black;
     border-bottom: 4px solid black;
+    animation: line-transform 2s linear both;
 }
 
 .content__middle-personality-item {
@@ -206,8 +231,90 @@ html {
     justify-content: space-between;
 }
 
+.content__scale {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 3px;
+    background-color: #CCCCCC;
+}
+
+.content__scale::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+    z-index: 1;
+    animation: scale-transform-100 2s linear both;
+}
+
+.content__scale--javascript:after {
+    width: 50%;
+    animation: scale-transform-50 2s linear both;
+}
+
+.content__scale--react:after {
+    width: 30%;
+    animation: scale-transform-30 2s linear both;
+}
+
+.content__scale--typescript:after {
+    width: 30%;
+    animation: scale-transform-30 2s linear both;
+}
+
+.content__scale--git:after {
+    width: 80%;
+    animation: scale-transform-80 2s linear both;
+}
+
+@keyframes scale-transform-100 {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+@keyframes scale-transform-50 {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 50%;
+    }
+}
+
+@keyframes scale-transform-30 {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 30%;
+    }
+}
+
+@keyframes scale-transform-80 {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 80%;
+    }
+}
+
 .content__text {
     font-weight: 700;
+    font-size: 1rem;
 }
 
 .content_personality-item-right {
@@ -253,10 +360,66 @@ html {
 
 .footer {
     border-top: 1px solid #CCCCCC;
+
 }
 
 .footer__inner {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+}
+
+@keyframes strong-appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes object-fit {
+    0% {
+        object-fit: contain;
+        transform: scale(1.1);
+    }
+    20% {
+        object-fit: cover;
+        transform: scale(1.15);
+    }
+    30% {
+        object-fit: cover;
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        object-fit: cover;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes strong-description-appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes line-transform {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    90% {
+        opacity: 1;
+        transform: translateX(90%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
