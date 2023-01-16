@@ -54,4 +54,4 @@ function rolSlider() {
 
 setInterval(() => {
 	nextSlide()
-	}, 3000);
+	}, 4000);
