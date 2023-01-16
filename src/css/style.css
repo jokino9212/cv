@@ -389,6 +389,8 @@ html {
 
 .content__bottom-box {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .content__bottom-left {
