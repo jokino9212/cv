@@ -69,6 +69,10 @@ html {
     font-size: 1.085rem;
 }
 
+.header__language-link {
+    font-weight: 600;
+}
+
 .header__language--ru {
     margin-right: 5px;
 }
@@ -638,6 +642,10 @@ html {
 }
 
 @media (max-width: 540px) {
+    .content__middle-box {
+        margin-bottom: 50px;
+    }
+
     .content__bottom-box {
         flex-direction: column;
 
@@ -645,7 +653,7 @@ html {
 
     .content__bottom-left {
         margin-right: 0;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .content__title {
