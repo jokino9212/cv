@@ -45,13 +45,8 @@ function prevSlide() {
 		sliderCount = sliderImages.length -1;
 	}
 	rolSlider();
-	
 }
 
 function rolSlider() {
 	sliderLine.style.transform = `translateX(${-sliderCount * sliderWidth}px)`
 }
-
-setInterval(() => {
-	nextSlide()
-	}, 5000);
