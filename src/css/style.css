@@ -197,7 +197,7 @@ html {
 }
 
 .content__slider {
-    max-width: 215px;
+    width: 215px;
     margin: 0 auto 25px auto;
     overflow: hidden;
     position: relative;
@@ -209,8 +209,8 @@ html {
 }
 
 .content__slider-img {
-    max-width: 215px;
-    max-height: 215px;
+    width: 215px;
+    height: 215px;
     object-fit: cover;
     filter: grayscale(100%);
 }
