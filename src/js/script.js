@@ -1,6 +1,14 @@
 const nav = document.getElementById('nav');
 const burger = document.getElementById('burger');
+const slider =document.querySelector('.content__slider');
+const sliderImages =document.querySelectorAll('.content__slider-img');
+const sliderLine =document.querySelector('.content__slider-line');
 
+const sliderBtnPrev =document.querySelector('.content__btn--prev');
+const sliderBtnNext =document.querySelector('.content__btn--next');
+
+let sliderCount = 0;
+let sliderWidth = slider.offsetWidth;
 
 window.addEventListener('DOMContentLoaded', function () {
 	burger.addEventListener('click', function () {
@@ -17,3 +25,33 @@ document.addEventListener('click', (e) => {
 		nav.classList.remove('header__nav--is-active')
 	}
 })
+
+sliderBtnNext.addEventListener('click', nextSlide);
+sliderBtnPrev.addEventListener('click', prevSlide);
+
+function nextSlide() {
+	sliderCount++;
+
+	if (sliderCount >= sliderImages.length) {
+		sliderCount = 0;
+	}
+	rolSlider();
+}
+
+function prevSlide() {
+	sliderCount--;
+
+	if (sliderCount < 0) {
+		sliderCount = sliderImages.length -1;
+	}
+	rolSlider();
+	
+}
+
+function rolSlider() {
+	sliderLine.style.transform = `translateX(${-sliderCount * sliderWidth}px)`
+}
+
+setInterval(() => {
+	nextSlide()
+	}, 3000);
