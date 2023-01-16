@@ -328,7 +328,7 @@ html {
 }
 
 .content__personality-item-box:hover {
-    scale: 1.15;
+    scale: 1.1;
 }
 
 .content__scale {
@@ -669,5 +669,9 @@ html {
     .content__outer {
         padding-left: 8px;
         padding-right: 8px;
+    }
+
+    .content__personality-item-box:hover {
+        scale: 1;
     }
 }
